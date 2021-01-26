@@ -1,0 +1,145 @@
+$mybg: #11ac6a;
+$myfont: "Montserrat", sans-serif;
+$quicksand: "Quicksand", sans-serif;
+$colorisi: #828282;
+$colorjudul: #4f4f4f;
+
+.navbar {
+  color: white;
+  background-color: $mybg;
+  font-family: $myfont;
+  font-weight: 300;
+
+  .navbar-brand {
+    font-family: $quicksand;
+    font-weight: 200;
+  }
+  a.nav-link.active {
+    font-weight: 600;
+  }
+}
+
+.jumbotron {
+  background-color: $mybg;
+  border-radius: 0;
+  padding: 100px 0;
+  box-sizing: border-box;
+  color: white;
+  .p-garis,
+  .p-garis2 {
+    position: absolute;
+  }
+  .p-garis {
+    left: 0;
+    top: 10%;
+  }
+  .p-garis2 {
+    right: 0;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-family: $quicksand;
+    font-weight: 600;
+    color: white;
+  }
+
+  span {
+    font-family: $myfont;
+    font-size: 20px;
+  }
+  input {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 9px 80px rgba(0, 0, 0, 0.07)),
+      drop-shadow(0px 2.01027px 17.869px rgba(0, 0, 0, 0.0417275)),
+      drop-shadow(0px 0.598509px 5.32008px rgba(0, 0, 0, 0.0282725));
+  }
+}
+.content {
+  padding: 100px 0;
+  .isi,
+  .isiayat {
+    min-height: 100px;
+    background-color: #f6f7fa;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    transition: 0.2s;
+
+    a {
+      text-decoration: none;
+    }
+    h3 {
+      font-family: $quicksand;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 25px;
+      font-style: normal;
+      color: $colorjudul;
+    }
+    span {
+      font-size: 15px;
+      font-family: $myfont;
+      font-weight: 300;
+      line-height: 18px;
+      color: $colorisi;
+    }
+  }
+  .isi:hover {
+    // background-color: red;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .isiayat {
+    h3 {
+      word-spacing: 2px;
+      line-height: 50px;
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  height: 130px;
+  padding: 30px 0;
+
+  h5 {
+    font-family: $quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: $colorjudul;
+    line-height: 25px;
+  }
+
+  span {
+    font-family: $myfont;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .sosmed {
+    a {
+      color: $colorjudul;
+      font-size: 20px;
+      transition: 0.4s;
+      padding: 10px;
+      border-radius: 4px;
+
+      &:hover {
+        color: white;
+        background-color: $mybg;
+      }
+    }
+  }
+}
